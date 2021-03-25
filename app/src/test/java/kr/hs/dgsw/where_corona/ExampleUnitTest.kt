@@ -1,4 +1,4 @@
-package kr.hs.dgsw.wherecorona
+package kr.hs.dgsw.where_corona
 
 import org.junit.Test
 
