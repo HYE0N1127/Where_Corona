@@ -1,4 +1,4 @@
-package kr.hs.dgsw.wherecorona
+package kr.hs.dgsw.where_corona
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -19,6 +19,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("kr.hs.dgsw.wherecorona", appContext.packageName)
+        assertEquals("kr.hs.dgsw.where_corona", appContext.packageName)
     }
 }
