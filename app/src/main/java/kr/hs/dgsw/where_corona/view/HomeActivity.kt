@@ -12,6 +12,7 @@ class HomeActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         val binding =
             DataBindingUtil.setContentView<ActivityHomeBinding>(this, R.layout.activity_home)
+        binding.lifecycleOwner = this
 
         binding.btnCityStatus.setOnClickListener {
             startActivity(Intent(this, CityStatusActivity::class.java))
