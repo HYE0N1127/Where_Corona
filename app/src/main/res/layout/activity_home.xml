@@ -22,14 +22,12 @@
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_gravity="center">
+                android:orientation="horizontal">
 
                 <ImageView
                     android:id="@+id/btnKoreaStatus"
                     android:layout_width="180dp"
                     android:layout_height="170dp"
-                    android:layout_marginEnd="15dp"
                     android:src="@drawable/btn_koreastatus" />
 
                 <ImageView
@@ -48,13 +46,13 @@
                 <ImageView
                     android:layout_width="115dp"
                     android:layout_height="185dp"
-                    android:src="@drawable/img_mainbanner"
-                    android:layout_marginEnd="15dp"/>
+                    android:src="@drawable/main_banner"
 
                 <ImageView
                     android:id="@+id/btnTodayStatus"
                     android:layout_width="170dp"
-                    android:layout_height="200dp"
+                    android:layout_height="185dp"
+                    android:layout_marginStart="225dp"
                     android:src="@drawable/btn_todaystatus" />
             </LinearLayout>
         </LinearLayout>
