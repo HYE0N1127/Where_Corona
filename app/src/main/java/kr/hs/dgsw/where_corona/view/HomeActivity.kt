@@ -14,6 +14,10 @@ class HomeActivity : AppCompatActivity() {
             DataBindingUtil.setContentView<ActivityHomeBinding>(this, R.layout.activity_home)
         binding.lifecycleOwner = this
 
+        binding.btnWhereImage.setOnClickListener {
+            // 이미지 출처 알려주는 팝업 띄워주기
+        }
+
         binding.btnCityStatus.setOnClickListener {
             startActivity(Intent(this, CityStatusActivity::class.java))
         }
