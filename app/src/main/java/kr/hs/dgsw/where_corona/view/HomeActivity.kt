@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import kr.hs.dgsw.where_corona.R
+import kr.hs.dgsw.where_corona.Fragment.WhereImageDialogFragment
 import kr.hs.dgsw.where_corona.databinding.ActivityHomeBinding
 
 class HomeActivity : AppCompatActivity() {
@@ -15,7 +16,9 @@ class HomeActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
 
         binding.btnWhereImage.setOnClickListener {
-            // 이미지 출처 알려주는 팝업 띄워주기
+            val whereImageDialog = WhereImageDialogFragment()
+
+            whereImageDialog.show(supportFragmentManager, whereImageDialog.tag)
         }
 
         binding.btnCityStatus.setOnClickListener {

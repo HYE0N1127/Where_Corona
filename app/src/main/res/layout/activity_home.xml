@@ -66,13 +66,13 @@
                         android:layout_width="115dp"
                         android:layout_height="185dp"
                         android:src="@drawable/img_mainbanner"
-                        android:layout_marginEnd="15dp"
                         android:layout_marginStart="45dp"/>
 
                     <ImageView
                         android:id="@+id/btnTodayStatus"
                         android:layout_width="170dp"
                         android:layout_height="195dp"
+                        android:layout_marginStart="35dp"
                         android:src="@drawable/btn_todaystatus"
                         android:layout_marginEnd="60dp"/>
                 </LinearLayout>
@@ -82,25 +82,16 @@
 
     </LinearLayout>
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/whereImageLayout"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="right"
-            android:layout_marginEnd="5dp"
-            android:layout_marginTop="5dp">
 
             <ImageView
                 android:id="@+id/btnWhereImage"
+                android:layout_gravity="right"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/btn_whereimage"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintRight_toRightOf="parent"
-                />
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:src="@drawable/btn_whereimage"/>
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
 
         <LinearLayout
             android:id="@+id/titleLayout"
