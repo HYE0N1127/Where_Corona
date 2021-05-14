@@ -69,11 +69,11 @@
                         android:layout_marginStart="45dp"/>
 
                     <ImageView
-                        android:id="@+id/btnTodayStatus"
+                        android:id="@+id/btn_today_status"
                         android:layout_width="170dp"
                         android:layout_height="195dp"
                         android:layout_marginStart="35dp"
-                        android:src="@drawable/btn_todaystatus"
+                        android:src="@drawable/test"
                         android:layout_marginEnd="60dp"/>
                 </LinearLayout>
             </LinearLayout>
