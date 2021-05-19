@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Where_Corona</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="korea_inspection_status">국내 검사중 수</string>
+    <string name="people_unit">(명)</string>
+    <string name="korea_complete_inspection">국내 검사완료 수</string>
 </resources>
