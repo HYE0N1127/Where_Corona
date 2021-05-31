@@ -4,4 +4,5 @@
     <string name="korea_inspection_status">국내 검사중 수</string>
     <string name="people_unit">(명)</string>
     <string name="korea_complete_inspection">국내 검사완료 수</string>
+    <string name="korean_status">COVID-19 국내현황</string>
 </resources>
