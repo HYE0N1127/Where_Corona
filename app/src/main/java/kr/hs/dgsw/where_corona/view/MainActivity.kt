@@ -1,4 +1,4 @@
-package kr.hs.dgsw.where_corona
+package kr.hs.dgsw.where_corona.view
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
