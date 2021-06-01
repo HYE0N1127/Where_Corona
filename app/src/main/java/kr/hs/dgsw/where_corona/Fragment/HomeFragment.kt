@@ -27,10 +27,11 @@ class HomeFragment : Fragment() {
         binding.btnWhereImage.setOnClickListener {
             Log.d("TEST", "이미지 출처 표기 버튼이 클릭되었습니다.")
             // TODO : AlertDialog 띄워주기
-
         }
 
-        
+        binding.btnKoreaStatus.setOnClickListener {
+            Log.d("TEST", "코로나19 국내 현황 버튼이 클릭되었습니다.")
+        }
 
         return binding.root
     }
