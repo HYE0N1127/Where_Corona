@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@layout/fragment_home">
+    app:startDestination="@id/homeFragment">
 
     <fragment
         android:id="@+id/homeFragment"
         android:name="kr.hs.dgsw.where_corona.Fragment.HomeFragment"
-        android:label="HomeFragment" />
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_koreaStatusFragment"
+            app:destination="@id/koreaStatusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/koreaStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.Fragment.KoreaStatusFragment"
+        android:label="fragment_korea_status"
+        tools:layout="@layout/fragment_korea_status" />
 </navigation>

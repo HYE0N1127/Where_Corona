@@ -7,33 +7,37 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.navigation.findNavController
 import kr.hs.dgsw.where_corona.R
 import kr.hs.dgsw.where_corona.databinding.FragmentHomeBinding
 
 class HomeFragment : Fragment() {
+
+    lateinit var binding : FragmentHomeBinding
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
 
-        val binding = DataBindingUtil.inflate<FragmentHomeBinding>(
+        binding = DataBindingUtil.inflate(
             inflater,
             R.layout.fragment_home,
             container,
             false
         )
 
-        binding.btnWhereImage.setOnClickListener {
-            Log.d("TEST", "이미지 출처 표기 버튼이 클릭되었습니다.")
-            // TODO : AlertDialog 띄워주기
-        }
+        return binding.root
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
 
         binding.btnKoreaStatus.setOnClickListener {
-            Log.d("TEST", "코로나19 국내 현황 버튼이 클릭되었습니다.")
+            it.findNavController().navigate(R.id.action_homeFragment_to_koreaStatusFragment)
         }
 
-        return binding.root
     }
 
 }
