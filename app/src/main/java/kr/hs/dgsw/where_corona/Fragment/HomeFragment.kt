@@ -38,6 +38,13 @@ class HomeFragment : Fragment() {
             it.findNavController().navigate(R.id.action_homeFragment_to_koreaStatusFragment)
         }
 
+        binding.btnCityStatus.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_cityStatusFragment)
+        }
+
+        binding.btnTodayStatus.setOnClickListener {
+            it.findNavController().navigate(R.id.action_homeFragment_to_todayStatusFragment)
+        }
     }
 
 }
