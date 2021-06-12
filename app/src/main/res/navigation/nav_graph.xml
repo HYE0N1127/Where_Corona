@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/homeFragment"
-        android:name="kr.hs.dgsw.where_corona.Fragment.HomeFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.HomeFragment"
         android:label="HomeFragment" >
         <action
             android:id="@+id/action_homeFragment_to_koreaStatusFragment"
@@ -22,17 +22,17 @@
 
     <fragment
         android:id="@+id/koreaStatusFragment"
-        android:name="kr.hs.dgsw.where_corona.Fragment.KoreaStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.KoreaStatusFragment"
         android:label="fragment_korea_status"
         tools:layout="@layout/fragment_korea_status" />
     <fragment
         android:id="@+id/todayStatusFragment"
-        android:name="kr.hs.dgsw.where_corona.Fragment.TodayStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.TodayStatusFragment"
         android:label="fragment_today_status"
         tools:layout="@layout/fragment_today_status" />
     <fragment
         android:id="@+id/cityStatusFragment"
-        android:name="kr.hs.dgsw.where_corona.Fragment.CityStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.CityStatusFragment"
         android:label="fragment_city_status"
         tools:layout="@layout/fragment_city_status" />
 </navigation>
