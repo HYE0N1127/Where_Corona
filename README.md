@@ -12,6 +12,11 @@
 |사승은|Android|Android Studio|
 |박지나|Design|Figma|
 
+## Tech Stack
+- RXJava2
+- MVVM
+- Retrofit2
+
 ## 📄 기능
 - 총 확진자 수를 보여줍니다.
 - 각 지역별 일일 확진자 수를 보여줍니다
