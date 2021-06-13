@@ -28,10 +28,11 @@
             android:background="@drawable/round_background">
 
             <LinearLayout
+                android:layout_marginTop="60dp"
+                android:layout_marginBottom="30dp"
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="25dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:id="@+id/btn_korea_status"
@@ -40,7 +41,7 @@
                     android:src="@drawable/ic_btn_korea_status"/>
 
                 <ImageView
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/ic_btn_city_status"
                     android:id="@+id/btn_city_status"
                     android:layout_marginStart="20dp"
                     android:layout_width="115dp"
@@ -53,8 +54,7 @@
             <LinearLayout
                 android:layout_gravity="center"
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="25dp">
+                android:layout_height="wrap_content">
 
                 <ImageView
                     android:src="@drawable/ic_launcher_background"
@@ -64,7 +64,7 @@
                 <!-- 더미 예방수칙 ImageView -->
 
                 <ImageView
-                    android:src="@drawable/ic_launcher_background"
+                    android:src="@drawable/btn_today_status"
                     android:id="@+id/btn_today_status"
                     android:layout_marginStart="20dp"
                     android:layout_width="170dp"
