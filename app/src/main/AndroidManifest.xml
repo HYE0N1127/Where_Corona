@@ -11,18 +11,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Where_Corona">
-        <activity android:name=".view.MainActivity"></activity>
-        <activity android:name=".view.TodayStatusActivity" />
-        <activity android:name=".view.KoreaStatusActivity" />
-        <activity android:name=".view.CityStatusActivity" />
-        <activity android:name=".view.HomeActivity">
+        <activity android:name=".view.activity.view.activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".view.MainActivity" />
     </application>
 
 </manifest>

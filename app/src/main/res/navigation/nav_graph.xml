@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_koreaStatusFragment"
+            app:destination="@id/koreaStatusFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_todayStatusFragment"
+            app:destination="@id/todayStatusFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cityStatusFragment"
+            app:destination="@id/cityStatusFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/koreaStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.KoreaStatusFragment"
+        android:label="fragment_korea_status"
+        tools:layout="@layout/fragment_korea_status" />
+    <fragment
+        android:id="@+id/todayStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.TodayStatusFragment"
+        android:label="fragment_today_status"
+        tools:layout="@layout/fragment_today_status" />
+    <fragment
+        android:id="@+id/cityStatusFragment"
+        android:name="kr.hs.dgsw.where_corona.view.activity.view.fragment.CityStatusFragment"
+        android:label="fragment_city_status"
+        tools:layout="@layout/fragment_city_status" />
+</navigation>
