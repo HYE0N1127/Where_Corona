@@ -1,4 +1,4 @@
-package kr.hs.dgsw.where_corona.viewmodel
+package kr.hs.dgsw.where_corona.base.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
