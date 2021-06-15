@@ -50,6 +50,7 @@
 
             <ImageView
                 android:id="@+id/btn_where_image"
+                android:onClick="@{vm::whereImageEvent}"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
@@ -77,12 +78,14 @@
 
                 <ImageView
                     android:id="@+id/btn_korea_status"
+                    android:onClick="@{vm::koreaRecordEvent}"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_btn_korea_status" />
 
                 <ImageView
                     android:id="@+id/btn_city_status"
+                    android:onClick="@{vm::cityRecordEvent}"
                     android:layout_width="115dp"
                     android:layout_height="170dp"
                     android:layout_marginStart="20dp"
@@ -100,12 +103,13 @@
                 <ImageView
                     android:layout_width="115dp"
                     android:layout_height="185dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/ic_vp_precautions_first" />
 
                 <!-- 더미 예방수칙 ImageView -->
 
                 <ImageView
                     android:id="@+id/btn_today_status"
+                    android:onClick="@{vm::todayRecordEvent}"
                     android:layout_width="170dp"
                     android:layout_height="185dp"
                     android:layout_marginStart="20dp"

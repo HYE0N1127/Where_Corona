@@ -1,49 +1,43 @@
 package kr.hs.dgsw.where_corona.view.activity.view.fragment
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.databinding.DataBindingUtil
+import androidx.fragment.app.viewModels
+import androidx.lifecycle.ViewModel
 import androidx.navigation.findNavController
 import kr.hs.dgsw.where_corona.R
+import kr.hs.dgsw.where_corona.base.fragment.BaseFragment
 import kr.hs.dgsw.where_corona.databinding.FragmentHomeBinding
+import kr.hs.dgsw.where_corona.viewmodel.HomeViewModel
 
-class HomeFragment : Fragment() {
+class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>() {
+    override val viewModel: HomeViewModel by viewModels()
 
-    lateinit var binding : FragmentHomeBinding
+    override fun observerViewModel() {
+        with(viewModel) {
+            onWhereImageEvent.observe(this@HomeFragment, {
+                Log.d("TEST", "이미지 출처표기 버튼이 클릭되었습니다.")
+            })
 
-    override fun onCreateView(
-        inflater: LayoutInflater,
-        container: ViewGroup?,
-        savedInstanceState: Bundle?
-    ): View? {
+            onCityRecordEvent.observe(this@HomeFragment, {
+                Log.d("TEST", "도시별 확진자 기록 체크 버튼이 클릭되었습니다.")
+                view?.findNavController()?.navigate(R.id.action_homeFragment_to_cityStatusFragment)
+            })
 
-        binding = DataBindingUtil.inflate(
-            inflater,
-            R.layout.fragment_home,
-            container,
-            false
-        )
+            onKoreaRecordEvent.observe(this@HomeFragment, {
+                Log.d("TEST", "한국 확진자 기록 확인 버튼이 클릭되었습니다.")
+                view?.findNavController()?.navigate(R.id.action_homeFragment_to_koreaStatusFragment)
+            })
 
-        return binding.root
-    }
-
-    override fun onActivityCreated(savedInstanceState: Bundle?) {
-        super.onActivityCreated(savedInstanceState)
-
-        binding.btnKoreaStatus.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_koreaStatusFragment)
-        }
-
-        binding.btnCityStatus.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_cityStatusFragment)
-        }
-
-        binding.btnTodayStatus.setOnClickListener {
-            it.findNavController().navigate(R.id.action_homeFragment_to_todayStatusFragment)
+            onTodayRecordEvent.observe(this@HomeFragment, {
+                Log.d("TEST", "당일 확진자 기록 확인 버튼이 클릭되었습니다.")
+                view?.findNavController()?.navigate(R.id.action_homeFragment_to_todayStatusFragment)
+            })
         }
     }
-
 }

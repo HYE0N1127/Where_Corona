@@ -1,5 +1,6 @@
 package kr.hs.dgsw.where_corona.viewmodel
 
+import android.view.View
 import androidx.lifecycle.MutableLiveData
 import io.reactivex.Completable
 import io.reactivex.observers.DisposableCompletableObserver
@@ -11,19 +12,19 @@ class HomeViewModel : BaseViewModel() {
     val onKoreaRecordEvent = MutableLiveData<Unit>()
     val onCityRecordEvent = MutableLiveData<Unit>()
 
-    fun whereImageEvent() {
+    fun whereImageEvent(view: View) {
         onWhereImageEvent.value = Unit
     }
 
-    fun todayRecordEvent() {
+    fun todayRecordEvent(view: View) {
         onTodayRecordEvent.value = Unit
     }
 
-    fun koreaRecordEvent() {
+    fun koreaRecordEvent(view: View) {
         onKoreaRecordEvent.value = Unit
     }
 
-    fun cityRecordEvent() {
+    fun cityRecordEvent(view: View) {
         onCityRecordEvent.value = Unit
     }
 }
