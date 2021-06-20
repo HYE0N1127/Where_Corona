@@ -100,12 +100,11 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center">
 
-                <ImageView
+                <androidx.viewpager2.widget.ViewPager2
+                    android:id="@+id/vp_precaution"
                     android:layout_width="115dp"
                     android:layout_height="185dp"
-                    android:src="@drawable/ic_vp_precautions_first" />
-
-                <!-- 더미 예방수칙 ImageView -->
+                    tools:src="@drawable/ic_vp_precautions_first" />
 
                 <ImageView
                     android:id="@+id/btn_today_status"
@@ -114,8 +113,6 @@
                     android:layout_height="185dp"
                     android:layout_marginStart="20dp"
                     android:src="@drawable/btn_today_status" />
-
-                <!-- 더미 예방수칙 Button SVG파일로 된 이미지가 나온다면 후에 바꿔주기 -->
 
             </LinearLayout>
 

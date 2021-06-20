@@ -18,7 +18,7 @@ class WhereImageFragment : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         val binding = DataBindingUtil.inflate<FragmentWhereImageDialogBinding>(
             inflater,
             R.layout.fragment_where_image_dialog,
