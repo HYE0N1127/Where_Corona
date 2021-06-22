@@ -101,9 +101,10 @@
                 android:layout_gravity="center">
 
                 <androidx.viewpager2.widget.ViewPager2
-                    android:id="@+id/vp_precaution"
+                    android:id="@+id/viewpager_precaution"
                     android:layout_width="115dp"
                     android:layout_height="185dp"
+                    android:background="#00000000"
                     tools:src="@drawable/ic_vp_precautions_first" />
 
                 <ImageView
